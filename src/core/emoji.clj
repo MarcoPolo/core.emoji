@@ -2,7 +2,7 @@
 
 (def ✊a take)
 
-(def ⏳  time)
+(defmacro ⏳  [& args] `(time ~@args))
 
 
 (def  🚼   #(Thread/sleep %))
